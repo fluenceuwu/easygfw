@@ -6,6 +6,7 @@ read -p 'Domain: ' 'domainvar'
 sudo apt update
 sudo apt install curl
 sudo apt-get install snapd
+sudo snap install core; sudo snap refresh core
 serverip=$(curl -kLs "http://api.ipify.org")
 echo "Installing Certbot for SSL."
 sudo snap install certbot --classic
